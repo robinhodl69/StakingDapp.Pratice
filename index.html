@@ -1,20 +1,34 @@
-<main>
-
-    <nav>
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Nuestro equipo</a></li>
-          <li><a href="#">Proyectos</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-  
-        <!-- Un formulario de búsqueda es una forma no-lineal de hacer búsquedas en un sitio web. -->
-  
-      </nav>
-    <h1>Robin Staking Protocol</h1>
-    <h2>optimize your money legos strategy with our staking mechanism</h2>
-    <!-- TODO: comentario -->
-    <img src="https://ipfs.apillon.io/ipfs/QmNbhSce1a2ZC9c38oVSD4cDQZjMcktUxUd9u4vWz75LQU">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web3 Staking Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Web3 Staking Platform</h1>
+  </header>
+  <main>
+    <section class="staking-form">
+      <h2>Stake Tokens</h2>
+      <form id="staking-form">
+        <label for="amount">Amount to Stake:</label>
+        <input type="number" id="amount" name="amount" step="0.01" required>
+        <button type="submit">Stake</button>
+      </form>
+    </section>
+    <section class="staking-info">
+      <h2>Staking Information</h2>
+      <p>Your current staked balance: <span id="current-balance">0.00</span> Tokens</p>
+      <p>Current staking rewards: <span id="staking-rewards">0.00</span> Tokens</p>
+    </section>
   </main>
+  <footer>
+    <p>&copy; 2023 Web3 Staking Platform</p>
+  </footer>
+</body>
+</html>
 
   
