@@ -80,7 +80,7 @@ main {
   grid-template-columns: repeat(2, 1fr); /* Create three equal-width columns */
   gap: 20px; /* Add spacing between columns */
 }
-.staking-form, .staking-info, .withdraw-form{
+.staking-form, .staking-info, .withdraw-form, .Claim-form{
   background-color: #2F244E;
   border: 1px solid #2F244E;
   color: #fff;
@@ -88,7 +88,7 @@ main {
   margin-bottom: 20px;
 }
 
-.staking-info{
+.staking-info, .Claim-form{
   text-align: center;
 }
 
