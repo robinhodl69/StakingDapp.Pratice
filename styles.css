@@ -1,15 +1,38 @@
+nav {
+  background-color: #333;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+li {
+  margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 /* Reset some default styles */
+
 body, h1, h2, p, form {
   margin: 0;
   padding: 0;
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 12px; /* Adjust the size as needed */
+  font-weight: lighter;
+  
 }
 
-body {
-  font-family: Arial, sans-serif;
-}
 
 header, footer {
-  background-color: #333;
+  background-color: #2F244E;
   color: #fff;
   padding: 10px;
 }
@@ -21,11 +44,21 @@ header h1, footer p {
 main {
   padding: 20px;
 }
-
-.staking-form, .staking-info {
-  border: 1px solid #ccc;
+.column-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Create three equal-width columns */
+  gap: 20px; /* Add spacing between columns */
+}
+.staking-form, .staking-info, .withdraw-form{
+  background-color: #2F244E;
+  border: 1px solid #2F244E;
+  color: #fff;
   padding: 10px;
   margin-bottom: 20px;
+}
+
+.staking-info{
+  text-align: center;
 }
 
 form label {
@@ -34,7 +67,7 @@ form label {
 }
 
 form input[type="number"] {
-  width: 100%;
+  width: 50%;
   padding: 8px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
@@ -42,13 +75,15 @@ form input[type="number"] {
 }
 
 form button {
-  background-color: #333;
+  background-color: #01813A;
   color: #fff;
   padding: 8px 15px;
   border: none;
   border-radius: 3px;
   cursor: pointer;
+  font-family: 'Press Start 2P', sans-serif;/* Change the font family */
 }
+
 
 form button:hover {
   background-color: #555;

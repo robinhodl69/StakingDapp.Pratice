@@ -5,13 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Robin Staking Dapp</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+
 </head>
 <body>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
   <header>
     <h1>Super Robin Staking</h1>
   </header>
   <main>
-    <section class="staking-form">
+
+    <section class="column-grid">
+
+      <div>
+        <section class="staking-form">
       <h2>Stake $RH69 </h2>
       <form id="staking-form">
         <label for="amount">Amount to Stake:</label>
@@ -19,11 +34,25 @@
         <button type="submit">Stake</button>
       </form>
     </section>
+      </div>
+      <div>
+    <section class="withdraw-form">
+      <h2>Unstake $RH69 </h2>
+      <form id="staking-form">
+        <label for="amount">Amount to Withdraw:</label>
+        <input type="number" id="amount" name="amount" step="0.01" required>
+        <button type="submit">Withdraw</button>
+      </form>
+    </section>
+      </div>
+    </section>
+
     <section class="staking-info">
       <h2>Staking Information</h2>
       <p>Your current staked balance: <span id="current-balance">0.00</span> Tokens</p>
       <p>Current staking rewards: <span id="staking-rewards">0.00</span> Tokens</p>
     </section>
+
   </main>
   <footer>
     <p>&copy; Super Robin Staking</p>
