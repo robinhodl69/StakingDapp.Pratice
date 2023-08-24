@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // stake: Lock tokens into our smart contract (Synthetix version?)
 // withdraw: unlock tokens from our smart contract
 // claimReward: users get their reward tokens

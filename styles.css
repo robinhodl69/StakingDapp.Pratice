@@ -42,6 +42,7 @@ body, h2, p, form {
 
 }
 
+
 h1 {
 
   margin: 0;
@@ -53,6 +54,8 @@ h1 {
   text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; /* Add the stroke effect */
 
 }
+
+
 
 header {
   background-image: url("https://ipfs.apillon.io/ipfs/QmPaFkDjvmmKD2sjYdqsBgkdv6myTDavaQ1PwZyN3RBhx8"); /* Replace with your image path */

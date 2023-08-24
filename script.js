@@ -38,3 +38,4 @@ stakeButton.addEventListener("click", async () => {
     alert("Please enter a valid amount.");
   }
 });
+
