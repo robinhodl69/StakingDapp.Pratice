@@ -14,6 +14,28 @@ nav {
   height: auto;
 }
 
+
+/* Add these styles to your existing styles.css or within a <style> tag in your HTML */
+
+#connect-wallet-button {
+  background-color: #2F244E;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 12px; /* Adjust the size as needed */
+  font-weight: lighter;
+}
+
+#connect-wallet-button:hover {
+  background-color: #01813A;
+}
+
+
 .menu {
   list-style: none;
   display: flex;
@@ -24,6 +46,8 @@ nav {
 .menu li {
   margin: 0 10px;
 }
+
+
 
 .menu a {
   text-decoration: none;

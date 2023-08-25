@@ -39,3 +39,23 @@ stakeButton.addEventListener("click", async () => {
   }
 });
 
+// Add these scripts to a separate script.js file
+
+const connectWalletButton = document.getElementById("connect-wallet-button");
+
+// Connect to wallet when the button is clicked
+connectWalletButton.addEventListener("click", async () => {
+  // Check if the user's browser has an Ethereum provider (like MetaMask)
+  if (typeof window.ethereum !== "undefined") {
+    try {
+      // Request access to the user's Ethereum wallet
+      await ethereum.request({ method: "eth_requestAccounts" });
+      alert("Wallet connected successfully!");
+    } catch (error) {
+      alert("Wallet connection failed: " + error.message);
+    }
+  } else {
+    alert("Ethereum provider (like MetaMask) not detected in your browser.");
+  }
+});
+
